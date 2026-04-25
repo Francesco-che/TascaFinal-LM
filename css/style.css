@@ -68,8 +68,21 @@ body {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.144);
     border-radius: 4px;
 }
-.categorias-form-container div {
-    padding: .8em 0;
+.form-div {
     display: flex;
     flex-direction: column;
+    margin-bottom: 1.5em;
+}
+
+.form-div label{
+    font-size: 0.9em;
+    margin-bottom: 0.5em;
+    color: #333;
+}
+
+.form-div input{
+    padding: 0.6em;
+    border: 1px solid #000;
+    border-radius: 4px;
+    font-size: 1em;
 }
