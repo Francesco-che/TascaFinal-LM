@@ -65,6 +65,8 @@ body {
     flex-direction: column;
     width: 40%;
 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.144);
+    border-radius: 4px;
 }
 .categorias-form-container div {
     padding: .8em 0;
