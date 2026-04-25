@@ -37,5 +37,18 @@ body {
 .contenido-principal {
     background-color: #f2f4f5;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 1em;
+}
+
+/* CATEGORIAS  ------------------------------------> */
+.categorias-form-container {
+    background-color: white;
+    padding: 2em;
+    display: flex;
+    flex-direction: column;
+}
+.categorias-form-container div {
+    padding: .8em 0;
 }
