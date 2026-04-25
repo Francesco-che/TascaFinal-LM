@@ -123,3 +123,13 @@ body {
 }
 
 /* LISTA ACTIVIDADES  ------------------------------------> */
+.index-container-archivos {
+    background-color: white;
+    padding: 2em;
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.144);
+    border-radius: 4px;
+}
