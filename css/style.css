@@ -35,5 +35,7 @@ body {
 /* CONTENIDO PRINCIPAL ------------------------------------> */
 
 .contenido-principal {
-    background-color: #ffffff;
+    background-color: #f2f4f5;
+    display: flex;
+    justify-content: center;
 }
