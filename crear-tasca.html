@@ -18,8 +18,8 @@
             <h1>Crear nueva tarea</h1>
             <div class="categorias-form-container">
                 <div class="form-div">
-                    <label for="titulo">Título</label>
-                    <input type="text" id="titulo">
+                    <label for="title">Título</label>
+                    <input type="text" id="title">
                 </div>
                 <div class="form-div">
                     <label for="description">Descripción:</label>
@@ -31,7 +31,17 @@
                 </div>
                 <div class="form-div">
                     <label for="category">Categoría:</label>
-                    <input type="text" id="category">
+                    <select name="category" id="category">
+                        <option value=""></option>
+                    </select>
+                </div>
+                <div class="form-div">
+                    <label for="priority">Prioridad:</label>
+                    <select name="priority" id="priority">
+                        <option value="baja">Baja</option>
+                        <option value="media">Media</option>
+                        <option value="alta">Alta</option>
+                    </select>
                 </div>
                 <button class="blue-button" type="submit">Añadir categoria</button>
             </div>
