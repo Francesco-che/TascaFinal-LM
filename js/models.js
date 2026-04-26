@@ -16,3 +16,10 @@ export class Tarea {
         this.realizada = false; // al crear una tarea, sale como no hecha
     }
 }
+
+export function generarIDTarea(tareas){
+    if (!tareas || tareas.length === 0) {
+        return "task-001";
+    }
+    
+}
