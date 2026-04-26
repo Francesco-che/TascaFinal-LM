@@ -113,6 +113,10 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
+.form-div2 #colorPicker{
+    padding: 0;
+}
+
 /* CREAR TAREA  ------------------------------------> */
 .form-div select{
     padding: 0.6em;
