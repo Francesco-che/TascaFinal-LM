@@ -1,3 +1,5 @@
+import {categoria} from './models';
+
 const btnAñadirCategoria = document.getElementById("btn-añadirCategoria");
 
 btnAñadirCategoria.addEventListener("click", function() {
