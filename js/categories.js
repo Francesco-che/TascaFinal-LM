@@ -11,7 +11,7 @@ btnAñadirCategoria.addEventListener("click", function() {
     console.log(`Nombre: ${categoria}, Color: ${color}`);
 
     const nuevaCategoria = new Categoria(categoria, color);
-    console.log("Categoría creada en memoria:", nuevaCategoria);
+    console.log("Categoría creada:", nuevaCategoria);
 
     let listaCategorias = obtenerDatos('categorias');
 
@@ -23,3 +23,13 @@ btnAñadirCategoria.addEventListener("click", function() {
     guardarDatos('categorias', listaCategorias);
     console.log("Categoría guardada", listaCategorias);
 });
+
+function cargarCategorias(){
+
+}
+function borrarCategoria(){
+    
+}
+function limpiarCategorias(){
+    
+}

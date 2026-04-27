@@ -154,3 +154,8 @@ body {
     flex-direction: column;
 }
 
+/* CATEGORIAS  ------------------------------------> */
+.lista-categorias-container{
+    margin-top: 2em;
+    width: 40%;
+}
