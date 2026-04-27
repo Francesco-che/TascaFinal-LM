@@ -26,12 +26,31 @@ btnAñadirCategoria.addEventListener("click", function() {
 
 function cargarCategorias(){
     const contenedorCategorias = document.getElementById("lista-categorias");
-    contenedor.innerHTML = '';
+    contenedorCategorias.innerHTML = '';
 
-    const listaCategorias = obtenerDatos('categorias');
+    const listaCategorias = obtenerDatos('categorias') || []; // por lo que vi || [] sirve para asegurar que lea el array aunque este vacio (y devuelva null)
+
     listaCategorias.forEach((categoria, index) => {
         const nuevaCategoria = document.createElement("div");
         nuevaCategoria.classList.add("categoriaCreada");
+
+        nuevaCategoria.innerHTML = `
+            <div class="nueva-categoria-div">
+                <div style="background-color: ${categoria.color};" class="nueva-categoria-color"></div>
+                <span class="nueva-categoria-contenido">${categoria.nombre}</span>
+            </div>
+        `;
+
+        const btnEliminar = document.createElement("button");
+        btnEliminar.textContent = "Eliminar";
+        btnEliminar.classList.add("red-button");
+
+        btnEliminar.addEventListener("click", function() {
+            
+        });
+
+        nuevaCategoria.appendChild(btnEliminar);
+        contenedorCategorias.appendChild(nuevaCategoria);
     })
 }
 function borrarCategoria(){
