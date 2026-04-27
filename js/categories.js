@@ -1,4 +1,4 @@
-import {Categoria} from './models';
+import {Categoria} from './models.js';
 import { obtenerDatos, guardarDatos } from './storage.js';
 
 const btnAñadirCategoria = document.getElementById("btn-añadirCategoria");
@@ -10,7 +10,7 @@ btnAñadirCategoria.addEventListener("click", function() {
     const color = document.getElementById("colorPicker").value;
     console.log(`Nombre: ${categoria}, Color: ${color}`);
 
-    const nuevaCategoria = new Categoria(nombre, color);
+    const nuevaCategoria = new Categoria(categoria, color);
     console.log("Categoría creada en memoria:", nuevaCategoria);
 
     let listaCategorias = obtenerDatos('categorias');
