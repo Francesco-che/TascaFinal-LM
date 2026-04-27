@@ -25,11 +25,15 @@ btnAñadirCategoria.addEventListener("click", function() {
 });
 
 function cargarCategorias(){
+    const contenedorCategorias = document.getElementById("lista-categorias");
+    contenedor.innerHTML = '';
 
+    const listaCategorias = obtenerDatos('categorias');
+    listaCategorias.forEach((categoria, index) => {
+        const nuevaCategoria = document.createElement("div");
+        nuevaCategoria.classList.add("categoriaCreada");
+    })
 }
 function borrarCategoria(){
-    
-}
-function limpiarCategorias(){
     
 }
