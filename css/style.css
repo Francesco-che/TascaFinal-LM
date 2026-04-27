@@ -169,9 +169,10 @@ body {
     display: flex;
     align-items: center;
     background-color: #f2f4f5;
+    padding: 1em;
 }
 .nueva-categoria-color{
-    
+    width: 100%;
 }
 .nueva-categoria-contenido{
     

@@ -22,6 +22,8 @@ btnAñadirCategoria.addEventListener("click", function() {
     listaCategorias.push(nuevaCategoria);
     guardarDatos('categorias', listaCategorias);
     console.log("Categoría guardada", listaCategorias);
+
+    cargarCategorias();
 });
 
 function cargarCategorias(){
@@ -46,7 +48,7 @@ function cargarCategorias(){
         btnEliminar.classList.add("red-button");
 
         btnEliminar.addEventListener("click", function() {
-            
+            nuevaCategoria.remove();
         });
 
         nuevaCategoria.appendChild(btnEliminar);
