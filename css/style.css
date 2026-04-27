@@ -157,13 +157,18 @@ body {
 /* CATEGORIAS  ------------------------------------> */
 .lista-categorias-container{
     margin-top: 2em;
-    width: 40%;
+    width: 100%;
+}
+
+.categoriaCreada{
     background-color: white;
+    width: 40%;
 }
 
 .nueva-categoria-div{
     display: flex;
     align-items: center;
+    background-color: #f2f4f5;
 }
 .nueva-categoria-color{
     

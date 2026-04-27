@@ -28,7 +28,7 @@ function cargarCategorias(){
     const contenedorCategorias = document.getElementById("lista-categorias");
     contenedorCategorias.innerHTML = '';
 
-    const listaCategorias = obtenerDatos('categorias') || []; // por lo que vi || [] sirve para asegurar que lea el array aunque este vacio (y devuelva null)
+    const listaCategorias = obtenerDatos('categorias') || []; // investigue y || [] sirve para asegurar que lea el array aunque este vacio (y devuelva null)
 
     listaCategorias.forEach((categoria, index) => {
         const nuevaCategoria = document.createElement("div");
