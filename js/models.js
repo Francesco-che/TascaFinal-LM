@@ -23,7 +23,7 @@ export function generarIDTarea(tareas){
     }
     const ultimaTarea = tareas[tareas.length - 1];
     const numeroString = ultimaTarea.id.slice(5);
-    const nuevoNumero = parseInt(numeroStr, 10) + 1;
+    const nuevoNumero = parseInt(numeroString, 10) + 1;
     const nuevoNumeroString = nuevoNumero.toString().padStart(3, '0');
     
     return `task-${nuevoNumeroString}`;
