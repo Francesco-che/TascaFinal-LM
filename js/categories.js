@@ -1,12 +1,25 @@
 import {Categoria} from './models';
+import { obtenerDatos, guardarDatos } from './storage.js';
 
 const btnAñadirCategoria = document.getElementById("btn-añadirCategoria");
 
 btnAñadirCategoria.addEventListener("click", function() {
+    event.preventDefault();
+
     const categoria = document.getElementById("categoria").value;
     const color = document.getElementById("colorPicker").value;
     console.log(`Nombre: ${categoria}, Color: ${color}`);
 
     const nuevaCategoria = new Categoria(nombre, color);
     console.log("Categoría creada en memoria:", nuevaCategoria);
+
+    let listaCategorias = obtenerDatos('categorias');
+
+    if (listaCategorias === null) {
+        listaCategorias = [];
+    }
+
+    listaCategorias.push(nuevaCategoria);
+    guardarDatos('categorias', listaCategorias);
+    console.log("Categoría guardada", listaCategorias);
 });
