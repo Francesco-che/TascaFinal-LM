@@ -48,7 +48,10 @@ function cargarCategorias(){
         btnEliminar.classList.add("red-button");
 
         btnEliminar.addEventListener("click", function() {
-            nuevaCategoria.remove();
+            const storageCategorias = obtenerDatos('categorias') || [];
+            storageCategorias.splice(index, 1);
+            guardarDatos('categorias', storageCategorias);
+            cargarCategorias();
         });
 
         const contenedorInterno = nuevaCategoria.querySelector(".nueva-categoria-div");
@@ -56,7 +59,4 @@ function cargarCategorias(){
         nuevaCategoria.appendChild(btnEliminar);
         contenedorCategorias.appendChild(nuevaCategoria);
     })
-}
-function borrarCategoria(){
-    
 }
