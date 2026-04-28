@@ -11,6 +11,8 @@ window.onload = function() {
 function cargarCategoriasSelect() {
     const listaCategorias = obtenerDatos('categorias') || [];
     
+    selectCategoria.innerHTML = '<option value=""></option>';
+
     listaCategorias.forEach(categoria => {
         const option = document.createElement("option");
         option.value = categoria.nombre;
