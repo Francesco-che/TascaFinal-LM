@@ -37,11 +37,9 @@ function cargarCategorias(){
         nuevaCategoria.classList.add("categoriaCreada");
 
         nuevaCategoria.innerHTML = `
-            <div class="nueva-categoria-div">
-                <div>
+            <div class="categoria-info">
                 <div style="background-color: ${categoria.color};" class="nueva-categoria-color"></div>
                 <span class="nueva-categoria-contenido">${categoria.nombre}</span>
-                </div>
             </div>
         `;
 
@@ -55,7 +53,7 @@ function cargarCategorias(){
 
         const contenedorInterno = nuevaCategoria.querySelector(".nueva-categoria-div");
 
-        contenedorInterno.appendChild(btnEliminar);
+        nuevaCategoria.appendChild(btnEliminar);
         contenedorCategorias.appendChild(nuevaCategoria);
     })
 }
