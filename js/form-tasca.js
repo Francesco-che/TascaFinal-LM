@@ -4,6 +4,10 @@ import { obtenerDatos, guardarDatos } from './storage.js';
 
 const selectCategoria = document.getElementById("category");
 
+window.onload = function() {
+    cargarCategoriasSelect();
+};
+
 function cargarCategoriasSelect() {
     const listaCategorias = obtenerDatos('categorias') || [];
     
@@ -20,5 +24,3 @@ const btnCrearTarea = document.getElementById("btn-crearTarea");
 btnCrearTarea.addEventListener("click", function(event) {
     event.preventDefault();
 })
-
-cargarCategoriasSelect();
