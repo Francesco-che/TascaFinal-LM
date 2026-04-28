@@ -14,3 +14,11 @@ function cargarCategoriasSelect() {
         selectCategoria.appendChild(option);
     });
 }
+
+const btnCrearTarea = document.getElementById("btn-crearTarea");
+
+btnCrearTarea.addEventListener("click", function(event) {
+    event.preventDefault();
+})
+
+cargarCategoriasSelect();
