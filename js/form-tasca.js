@@ -38,12 +38,12 @@ btnCrearTarea.addEventListener("click", function(event) {
     }
 
     const listaTareas = obtenerDatos('tareas') || [];
-    const idNuevo = generarIDTarea('listaTareas');
+    const idNuevo = generarIDTarea(listaTareas);
 
     const nuevaTarea = new Tarea(idNuevo, titulo, description, date, category, priority);
     
     tareasExistentes.push(nuevaTarea);
-    guardarDatos('tareas', tareasExistentes);
+    guardarDatos('tareas', listaTareas);
 
     alert("✅ | Tarea creada");
     console.log(idNuevo, titulo, description, date, category, priority);
