@@ -38,8 +38,10 @@ function cargarCategorias(){
 
         nuevaCategoria.innerHTML = `
             <div class="nueva-categoria-div">
+                <div>
                 <div style="background-color: ${categoria.color};" class="nueva-categoria-color"></div>
                 <span class="nueva-categoria-contenido">${categoria.nombre}</span>
+                </div>
             </div>
         `;
 
@@ -51,7 +53,9 @@ function cargarCategorias(){
             nuevaCategoria.remove();
         });
 
-        nuevaCategoria.appendChild(btnEliminar);
+        const contenedorInterno = nuevaCategoria.querySelector(".nueva-categoria-div");
+
+        contenedorInterno.appendChild(btnEliminar);
         contenedorCategorias.appendChild(nuevaCategoria);
     })
 }
