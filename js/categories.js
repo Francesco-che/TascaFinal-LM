@@ -3,6 +3,10 @@ import { obtenerDatos, guardarDatos } from './storage.js';
 
 const btnAñadirCategoria = document.getElementById("btn-añadirCategoria");
 
+window.onload = function() {
+    cargarCategorias();
+};
+
 btnAñadirCategoria.addEventListener("click", function() {
     event.preventDefault();
     
