@@ -5,8 +5,13 @@ const btnAñadirCategoria = document.getElementById("btn-añadirCategoria");
 
 btnAñadirCategoria.addEventListener("click", function() {
     event.preventDefault();
-
+    
     const categoria = document.getElementById("categoria").value;
+
+    if (categoria == null || categoria.trim() == ''){
+        event.preventDefault();
+        alert("⚠️ No puedes dejar el nombre vacío, introduce un nombre válido");
+    } else {
     const color = document.getElementById("colorPicker").value;
     console.log(`Nombre: ${categoria}, Color: ${color}`);
 
@@ -24,6 +29,7 @@ btnAñadirCategoria.addEventListener("click", function() {
     console.log("Categoría guardada", listaCategorias);
 
     cargarCategorias();
+    }
 });
 
 function cargarCategorias(){
