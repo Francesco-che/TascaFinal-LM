@@ -25,4 +25,18 @@ const btnCrearTarea = document.getElementById("btn-crearTarea");
 
 btnCrearTarea.addEventListener("click", function(event) {
     event.preventDefault();
+
+    const titulo = document.getElementById("title").value;
+    const description = document.getElementById("description").value;
+    const date = document.getElementById("date").value;
+    const category = document.getElementById("category").value;
+    const priority = document.getElementById("priority").value;
+
+    if (titulo.trim() === ''){
+        alert("⚠️ No puedes dejar el título vacío, por favor introduce un valor válido");
+        return;
+    }
+
+    const listaTareas = obtenerDatos('tareas') || [];
+    const idNuevo = generarIDTarea('listaTareas');
 })
