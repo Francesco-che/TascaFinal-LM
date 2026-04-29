@@ -87,4 +87,15 @@ function pintarTareas(){
         `
         divAcabadas.appendChild(tareaCreada);
     })
+
+    const btnBorrar = tareaCreada.querySelector(".boton-borrarTarea");
+    btnBorrar.addEventListener("click", () => {
+            const indiceReal = listaTareas.findIndex(t => t.id === tarea.id);
+            
+            if(indiceReal !== -1) {
+                listaTareas.splice(indiceReal, 1);
+                guardarDatos('tareas', listaTareas);
+                pintarTareas(); // Como todo está dentro de la función, leerá datos nuevos
+            }
+        });
 }
