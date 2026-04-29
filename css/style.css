@@ -215,6 +215,10 @@ body {
 
 /* INDEX  ------------------------------------> */
 
+.columna-tareas{
+    width: 100%;
+}
+
 .tarea-baja{
     background-color: #92c1a2;
 }
@@ -225,14 +229,20 @@ body {
     background-color: #fecacb;
 }
 
-.index-container-tareas {
-    background-color: #c1c1c1;
-}
-
 #lista-pendientes, #lista-acabadas {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 1.5em; 
     width: 100%;
     margin-top: 1em;
+}
+
+.tarea-pendiente-info {
+    padding: 1.2em;
+    border-radius: 6px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    color: #333;
 }
