@@ -19,12 +19,12 @@ export class Tarea {
 
 export function generarIDTarea(tareas){
     if (!tareas || tareas.length === 0) {
-        return "tarea-001";
+        return "task-001";
     }
     const ultimaTarea = tareas[tareas.length - 1];
     const numeroString = ultimaTarea.id.slice(5);
     const nuevoNumero = parseInt(numeroString, 10) + 1;
     const nuevoNumeroString = nuevoNumero.toString().padStart(3, '0');
     
-    return `tarea-${nuevoNumeroString}`;
+    return `task-${nuevoNumeroString}`;
 }
