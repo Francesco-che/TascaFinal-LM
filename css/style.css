@@ -212,3 +212,15 @@ body {
 .red-button:hover {
     background-color: #810604;
 }
+
+/* INDEX  ------------------------------------> */
+
+#tarea-Baja{
+    background-color: #92c1a2;
+}
+#tarea-media{
+    background-color: #fdf08a;
+}
+#tarea-Baja{
+    background-color: #fecacb;
+}
