@@ -5,21 +5,21 @@ window.onload = function() {
     pintarTareas();
 };
 
-const listaTareas = obtenerDatos('tareas') || [];
-
-const tareasPendientes = listaTareas.filter(tarea => tarea.realizada === false);
-const tareasCompletadas = listaTareas.filter(tarea => tarea.realizada === true);
 
 const divPendientes = document.getElementById("lista-pendientes");
 const divAcabadas = document.getElementById("lista-acabadas");
 
-const listaCategorias = obtenerDatos('categorias') || [];
 
 function pintarTareas(){
+    const listaTareas = obtenerDatos('tareas') || [];
+    const listaCategorias = obtenerDatos('categorias') || [];
+
+    const tareasPendientes = listaTareas.filter(tarea => tarea.realizada === false);
+    const tareasCompletadas = listaTareas.filter(tarea => tarea.realizada === true);
     divPendientes.innerHTML = '';
     divAcabadas.innerHTML = '';
 
-    tareasPendientes.forEach((tarea, index) => {
+    tareasPendientes.forEach((tarea) => {
         const tareaCreada = document.createElement("div");
         tareaCreada.classList.add("tareaCreadaPendiente");
 
