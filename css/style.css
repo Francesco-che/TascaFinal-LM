@@ -215,12 +215,46 @@ body {
 
 /* INDEX  ------------------------------------> */
 
-#tarea-Baja{
+#tarea-baja{
     background-color: #92c1a2;
 }
 #tarea-media{
     background-color: #fdf08a;
 }
-#tarea-Baja{
+#tarea-alta{
     background-color: #fecacb;
+}
+
+.index-container-tareas {
+    background-color: #c1c1c1;
+}
+
+.tareaCreadaPendiente{
+    
+}
+
+.tarea-pendiente-info{
+    padding: 1em;
+    border-radius: 4px;
+
+    max-width: 600px;
+    width: 100%;
+}
+
+.tarea-info-titulo{
+    display: flex;
+    align-items: center;
+    justify-content: space-between ;
+}
+
+.tarea-info-categoria{
+    border-radius: 4px;
+    padding: .2em;
+    max-width: 50%;
+}
+
+.tarea-info-botones{
+    display: flex;
+    align-items: center;
+    justify-content: space-between ;
 }
