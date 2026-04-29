@@ -134,54 +134,11 @@ function pintarTareas(){
         divAcabadas.appendChild(tareaCreada);
     })
 
-    const inputArchivo = document.getElementById("input-archivo");
-    const btnSubir = document.getElementById("btn-subir");
-
-    btnSubir.addEventListener("click", () => {
-        const archivo = inputArchivo.files[0];
-
-        if (archivo == null) {
-        alert("⚠️ Selecciona un archivo");
-        return;
-        }
-
-        try {
-        const textoArchivo = await archivo.text();
-        const tareasArchivo = JSON.parse(textoArchivo);
-        
-        const listaTareas = obtenerDatos('tareas') || [];
-        const listaCategorias = obtenerDatos('categorias') || [];
-
-        tareasArchivo.forEach(tareaImp => {
-
-            if (!listaCategorias.some(c => c.nombre === tareaImp.categoria.nombre)) {
-                listaCategorias.push(tareaImp.categoria);
-            }
-
-            if (!listaTareas.some(t => t.id === tareaImp.id)) {
-                listaTareas.push({
-                    id: tareaImp.id,
-                    titulo: tareaImp.titulo,
-                    descripcion: tareaImp.descripcion,
-                    fecha: tareaImp.fecha,
-                    categoria: tareaImp.categoria.nombre,
-                    prioridad: tareaImp.prioridad,
-                    realizada: tareaImp.realizada
-                });
-            }
-        });
-
-        guardarDatos('categorias', listaCategorias);
-        guardarDatos('tareas', listaTareas);
-
-        alert("✅ se cargo el archivo");
-        inputArchivo.value = '';
-        pintarTareas(); 
-
-    } catch (error) {
-        console.error("Error:", error);
-        alert("⚠️ error, formato invalido");
-    }
-    })
-
 }
+
+const inputArchivo = document.getElementById("input-archivo");
+const btnSubir = document.getElementById("btn-subir");
+
+btnSubir.addEventListener("click", async () => {
+        
+})
