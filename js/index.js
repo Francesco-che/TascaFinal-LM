@@ -65,6 +65,16 @@ function pintarTareas(){
             }
         });
 
+        const btnCompletar = tareaCreada.querySelector(".boton-completarTarea");
+        btnCompletar.addEventListener("click", () => {
+            const indiceReal = listaTareas.findIndex(t => t.id === tarea.id);
+            if(indiceReal !== -1) {
+                listaTareas[indiceReal].realizada = true; 
+                guardarDatos('tareas', listaTareas);
+                pintarTareas();
+            }
+        });
+
         divPendientes.appendChild(tareaCreada);
     });
 
@@ -106,11 +116,11 @@ function pintarTareas(){
             }
         });
 
-        const btnCompletar = tareaCreada.querySelector(".boton-completarTarea");
-        btnCompletar.addEventListener("click", () => {
+        const btnDesmarcar = tareaCreada.querySelector(".boton-descompletarTarea");
+        btnDesmarcar.addEventListener("click", () => {
             const indiceReal = listaTareas.findIndex(t => t.id === tarea.id);
             if(indiceReal !== -1) {
-                listaTareas[indiceReal].realizada = true; 
+                listaTareas[indiceReal].realizada = false; 
                 guardarDatos('tareas', listaTareas);
                 pintarTareas();
             }
