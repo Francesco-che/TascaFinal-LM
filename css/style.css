@@ -262,4 +262,12 @@ body {
     align-self: start;
     padding: .5em;
     border-radius: 5px;
+    color: black;
+
+    font-size: 0.9em;
+}
+
+.tarea-info-fecha {
+    font-size: 0.9em;
+    color: #555;
 }
