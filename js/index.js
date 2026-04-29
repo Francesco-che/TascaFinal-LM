@@ -140,5 +140,48 @@ const inputArchivo = document.getElementById("input-archivo");
 const btnSubir = document.getElementById("btn-subir");
 
 btnSubir.addEventListener("click", async () => {
+    const nombreArchivo = selectArchivo.value;
+    const rutaArchivo = `dades/${nombreArchivo}`;
+
+    try {
+        const respuesta = await fetch(rutaArchivo);
         
+        if (respuesta.ok == false) {
+            throw new Error("no se encontro el archivo");
+        }
+
+        const tareasArchivo = await respuesta.json();
+        
+        const listaTareas = obtenerDatos('tareas') || [];
+        const listaCategorias = obtenerDatos('categorias') || [];
+
+        tareasArchivo.forEach(tareaImp => {
+            if (!listaCategorias.some(c => c.nombre === tareaImp.categoria.nombre)) {
+                listaCategorias.push(tareaImp.categoria);
+            }
+
+            if (!listaTareas.some(t => t.id === tareaImp.id)) {
+                listaTareas.push({
+                    id: tareaImp.id,
+                    titulo: tareaImp.titulo,
+                    descripcion: tareaImp.descripcion,
+                    fecha: tareaImp.fecha,
+                    categoria: tareaImp.categoria.nombre,
+                    prioridad: tareaImp.prioridad,
+                    realizada: tareaImp.realizada
+                });
+            }
+        });
+
+        guardarDatos('categorias', listaCategorias);
+        guardarDatos('tareas', listaTareas);
+
+        alert(`✅ Archivo ${nombreArchivo} cargado con éxito`);
+        
+        pintarTareas(); 
+
+    } catch (error) {
+        console.error("error:", error);
+        alert(`⚠️ no se encontro el archivo: ${nombreArchivo}`);
+    }
 })
