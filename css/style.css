@@ -215,13 +215,13 @@ body {
 
 /* INDEX  ------------------------------------> */
 
-#tarea-baja{
+.tarea-baja{
     background-color: #92c1a2;
 }
-#tarea-media{
+.tarea-media{
     background-color: #fdf08a;
 }
-#tarea-alta{
+.tarea-alta{
     background-color: #fecacb;
 }
 

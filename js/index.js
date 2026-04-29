@@ -27,7 +27,7 @@ function pintarTareas(){
         const colorFondo = categoriaDeLaTarea ? categoriaDeLaTarea.color : "#ccc";
 
         tareaCreada.innerHTML = `
-            <div class="tarea-pendiente-info" id="tarea-${tarea.prioridad}">
+            <div class="tarea-pendiente-info tarea-${tarea.prioridad}">
                 <div class="tarea-info-titulo">
                     <div>${tarea.titulo}</div>
                     <div>${tarea.prioridad}</div>
