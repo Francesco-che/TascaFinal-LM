@@ -54,6 +54,17 @@ function pintarTareas(){
             https://www.svgrepo.com/svg/491477/shape-square
 
         */
+       const btnBorrar = tareaCreada.querySelector(".boton-borrarTarea");
+        btnBorrar.addEventListener("click", () => {
+            const indiceReal = listaTareas.findIndex(t => t.id === tarea.id);
+            
+            if(indiceReal !== -1) {
+                listaTareas.splice(indiceReal, 1);
+                guardarDatos('tareas', listaTareas);
+                pintarTareas();
+            }
+        });
+
         divPendientes.appendChild(tareaCreada);
     });
 
@@ -65,7 +76,7 @@ function pintarTareas(){
         const colorFondo = categoriaDeLaTarea ? categoriaDeLaTarea.color : "#ccc";
 
         tareaCreada.innerHTML = `
-            <div class="tarea-acabada-info" id="tarea-${tarea.prioridad}">
+            <div class="tarea-acabada-info tarea-${tarea.prioridad}">
                 <div class="tarea-info-titulo">
                     <div>${tarea.titulo}</div>
                     <div>${tarea.prioridad}</div>
@@ -85,17 +96,17 @@ function pintarTareas(){
                 </div>
             </div>
         `
-        divAcabadas.appendChild(tareaCreada);
-    })
-
-    const btnBorrar = tareaCreada.querySelector(".boton-borrarTarea");
-    btnBorrar.addEventListener("click", () => {
+        const btnBorrar = tareaCreada.querySelector(".boton-borrarTarea");
+        btnBorrar.addEventListener("click", () => {
             const indiceReal = listaTareas.findIndex(t => t.id === tarea.id);
-            
             if(indiceReal !== -1) {
                 listaTareas.splice(indiceReal, 1);
                 guardarDatos('tareas', listaTareas);
-                pintarTareas(); // Como todo está dentro de la función, leerá datos nuevos
+                pintarTareas();
             }
         });
+        
+        divAcabadas.appendChild(tareaCreada);
+    })
+
 }
