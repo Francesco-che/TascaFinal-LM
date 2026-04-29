@@ -13,6 +13,8 @@ const tareasCompletadas = listaTareas.filter(tarea => tareasCompletadas.realizad
 const divPendientes = document.getElementById("lista-pendientes");
 const divAcabadas = document.getElementById("lista-acabadas");
 
+const listaCategorias = obtenerDatos('categorias') || [];
+
 function pintarTareas(){
     divPendientes.innerHTML = '<div id="index-tarea-pendiente"></div>';
 
@@ -20,13 +22,16 @@ function pintarTareas(){
         const tareaCreada = document.createElement("div");
         tareaCreada.classList.add("tareaCreadaPendiente");
 
+        const categoriaDeLaTarea = listaCategorias.find(cat => cat.nombre === tarea.categoria);
+        const colorFondo = categoriaDeLaTarea ? categoriaDeLaTarea.color : "#ccc";
+
         tareaCreada.innerHTML = `
             <div class="tarea-pendiente-info">
                 <div class="tarea-pendiente-info-titulo">
                     <div>${tarea.titulo}</div>
                     <div>${tarea.prioridad}</div>
                 </div>
-                <div class="tarea-pendiente-info-categoria" style="background-color: ${categoria.color};">
+                <div class="tarea-pendiente-info-categoria" style="background-color: ${colorFondo};">
                     ${tarea.categoria}
                 </div>
                 <div class="tarea-pendiente-info-fecha">
