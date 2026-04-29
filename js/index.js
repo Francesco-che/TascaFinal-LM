@@ -136,7 +136,7 @@ function pintarTareas(){
 
 }
 
-const inputArchivo = document.getElementById("input-archivo");
+const selectArchivo = document.getElementById("select-archivo");
 const btnSubir = document.getElementById("btn-subir");
 
 btnSubir.addEventListener("click", async () => {
