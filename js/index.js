@@ -134,4 +134,8 @@ function pintarTareas(){
         divAcabadas.appendChild(tareaCreada);
     })
 
+    const inputArchivo = document.getElementById("input-archivo");
+    const btnSubir = document.getElementById("btn-subir");
+
+    
 }
