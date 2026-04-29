@@ -1,47 +1,47 @@
 [
   {
-    "id": "task-001",
-    "titol": "Crea l'estructura de carpetes del projecte",
-    "descripcio": "Organitza els fitxers: HTML, CSS, JS, dades...",
-    "data": "2025-04-15",
-    "categoria": { "nom": "Organització", "color": "#f7df1e" },
-    "prioritat": "Alta",
-    "realitzada": false
+    "id": "tarea-001",
+    "titulo": "Crea la estructura de carpetas del proyecto",
+    "descripcion": "Organiza los archivos: HTML, CSS, JS, datos...",
+    "fecha": "2025-04-15",
+    "categoria": { "nombre": "Organización", "color": "#f7df1e" },
+    "prioridad": "alta",
+    "realizada": false
   },
   {
-    "id": "task-002",
-    "titol": "Dissenya la interfície d'index.html",
-    "descripcio": "Mostra la llista de tasques i afegeix el contenidor del gràfic.",
-    "data": "2025-04-16",
-    "categoria": { "nom": "Disseny", "color": "#e5989b" },
-    "prioritat": "Mitjana",
-    "realitzada": false
+    "id": "tarea-002",
+    "titulo": "Diseña la interfaz de index.html",
+    "descripcion": "Muestra la lista de tareas y añade el contenedor del gráfico.",
+    "fecha": "2025-04-16",
+    "categoria": { "nombre": "Diseño", "color": "#e5989b" },
+    "prioridad": "media",
+    "realizada": false
   },
   {
-    "id": "task-003",
-    "titol": "Implementa el formulari a crear-tasca.html",
-    "descripcio": "Inclou validació dels camps i guardat a localStorage.",
-    "data": "2025-04-17",
-    "categoria": { "nom": "Formularis", "color": "#6c5ce7" },
-    "prioritat": "Alta",
-    "realitzada": false
+    "id": "tarea-003",
+    "titulo": "Implementa el formulario en crear-tasca.html",
+    "descripcion": "Incluye validación de los campos y guardado en localStorage.",
+    "fecha": "2025-04-17",
+    "categoria": { "nombre": "Formularios", "color": "#6c5ce7" },
+    "prioridad": "alta",
+    "realizada": false
   },
   {
-    "id": "task-004",
-    "titol": "Permet marcar les tasques com a fetes",
-    "descripcio": "Afegir checkbox a index.html i actualitzar l'estat.",
-    "data": "2025-04-18",
-    "categoria": { "nom": "Funcionalitat", "color": "#00cec9" },
-    "prioritat": "Alta",
-    "realitzada": false
+    "id": "tarea-004",
+    "titulo": "Permite marcar las tareas como hechas",
+    "descripcion": "Añadir checkbox a index.html y actualizar el estado.",
+    "fecha": "2025-04-18",
+    "categoria": { "nombre": "Funcionalidad", "color": "#00cec9" },
+    "prioridad": "alta",
+    "realizada": false
   },
   {
-    "id": "task-005",
-    "titol": "Crea el gràfic amb Chart.js",
-    "descripcio": "Mostrar les tasques fetes per mes en format bar chart.",
-    "data": "2025-04-20",
-    "categoria": { "nom": "Visualització", "color": "#fab1a0" },
-    "prioritat": "Alta",
-    "realitzada": false
+    "id": "tarea-005",
+    "titulo": "Crea el gráfico con Chart.js",
+    "descripcion": "Mostrar las tareas hechas por mes en formato bar chart.",
+    "fecha": "2025-04-20",
+    "categoria": { "nombre": "Visualización", "color": "#fab1a0" },
+    "prioridad": "alta",
+    "realizada": false
   }
 ]
