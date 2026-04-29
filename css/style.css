@@ -246,3 +246,13 @@ body {
     gap: 1em;
     color: #333;
 }
+
+.tarea-pendiente-info div{
+    display: flex;
+    justify-content: space-between;
+}
+
+.tarea-info-titulo{
+    font-weight: 600;
+    color: black;
+}
