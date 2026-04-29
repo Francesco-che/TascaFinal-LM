@@ -16,7 +16,8 @@ const divAcabadas = document.getElementById("lista-acabadas");
 const listaCategorias = obtenerDatos('categorias') || [];
 
 function pintarTareas(){
-    divPendientes.innerHTML = '<div id="index-tarea-pendiente"></div>';
+    divPendientes.innerHTML = '';
+    divAcabadas.innerHTML = '';
 
     tareasPendientes.forEach((tarea, index) => {
         const tareaCreada = document.createElement("div");
@@ -40,12 +41,8 @@ function pintarTareas(){
                 <div class="tarea-pendiente-info-botones">
                     <div>${tarea.descripcion}</div>
                     <div>
-                        <button type="button" class="boton-completarTarea">
-                            
-                        </button>
-                        <button type="button" class="boton-borrarTarea">
-                            
-                        </button>
+                        <button type="button" class="boton-completarTarea"></button>
+                        <button type="button" class="boton-borrarTarea"></button>
                     </div>
                 </div>
             </div>
@@ -54,6 +51,5 @@ function pintarTareas(){
     });
 
     tareasCompletadas.forEach((tarea, index) => {
-        divAcabadas.innerHTML = '<div id="index-tarea-acabada"></div>';
     })
 }
