@@ -271,3 +271,19 @@ body {
     font-size: 0.9em;
     color: #555;
 }
+
+.tarea-info-botones {
+    margin-top: 0.5em;
+}
+
+.boton-completarTarea, .boton-borrarTarea {
+    background: none;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+    border-radius: 5px;
+}
+
+.boton-completarTarea:hover, .boton-borrarTarea:hover {
+    background-color: white;
+}
