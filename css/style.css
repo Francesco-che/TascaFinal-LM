@@ -238,7 +238,7 @@ body {
 }
 
 .tarea-pendiente-info {
-    padding: 1.2em;
+    padding: .8em;
     border-radius: 6px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     display: flex;
@@ -255,4 +255,11 @@ body {
 .tarea-info-titulo{
     font-weight: 600;
     color: black;
+}
+
+.tarea-info-categoria{
+    display: inline-block;
+    align-self: start;
+    padding: .5em;
+    border-radius: 5px;
 }
