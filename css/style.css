@@ -234,6 +234,10 @@ body {
     grid-template-columns: repeat(3, 1fr);
     gap: 1.5em; 
     width: 100%;
+    margin-top: 2em;
+}
+
+.columna-tareas{
     margin-top: 1em;
 }
 
