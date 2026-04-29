@@ -137,5 +137,14 @@ function pintarTareas(){
     const inputArchivo = document.getElementById("input-archivo");
     const btnSubir = document.getElementById("btn-subir");
 
-    
+    btnSubir.addEventListener("click", () => {
+        const archivo = inputArchivo.files[0];
+
+        if (archivo == null) {
+        alert("⚠️ Selecciona un archivo");
+        return;
+        }
+        
+    })
+
 }
