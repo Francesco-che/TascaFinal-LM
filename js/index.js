@@ -1,9 +1,10 @@
 import { obtenerDatos, guardarDatos } from './storage.js';
 import { Tarea, generarIDTarea } from './models.js';
-import {pintarGrafico } from './grafics.js';
+import {actualizarGrafico } from './grafics.js';
 
 window.onload = function() {
     pintarTareas();
+    actualizarGrafico();
 };
 
 
