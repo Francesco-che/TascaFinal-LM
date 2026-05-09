@@ -9,5 +9,8 @@ export function actualizarGrafico() {
     }
 
     const listaTareas = obtenerDatos('tareas') || [];
+    const tareasAcabadas = listaTareas.filter(tarea => tarea.realizada === true);
+
+    const conteoMeses = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
 }
 
