@@ -1,5 +1,6 @@
 import { obtenerDatos, guardarDatos } from './storage.js';
 import { Tarea, generarIDTarea } from './models.js';
+import { actualizarGrafico } from './grafics.js';
 
 window.onload = function() {
     pintarTareas();
@@ -133,7 +134,7 @@ function pintarTareas(){
 
         divAcabadas.appendChild(tareaCreada);
     })
-
+    actualizarGrafico();
 }
 
 const selectArchivo = document.getElementById("select-archivo");
