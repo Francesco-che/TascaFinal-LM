@@ -1,5 +1,7 @@
 import { obtenerDatos } from './storage.js';
 
+let graficoActual = null;
+
 export function actualizarGrafico() {
     const canvas = document.getElementById('graficoTareas');
     if (!canvas) return;
@@ -25,7 +27,7 @@ export function actualizarGrafico() {
         data: {
             labels: ['Enero', 'Febrero', 'Marzo', 'Abril', 'Mayo', 'Junio', 'Julio', 'Agosto', 'Setiembre', 'Octubre', 'Noviembre', 'Diciembre'],
             datasets: [{
-                label: 'Tasques realitzades',
+                label: 'Tareas relizadas',
                 data: conteoMeses,
                 borderColor: 'rgba(75, 192, 192, 1)',
                 backgroundColor: 'rgba(75, 192, 192, 0.2)',
