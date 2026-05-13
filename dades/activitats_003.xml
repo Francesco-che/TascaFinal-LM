@@ -1,1 +1,62 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<activitats>
+    <activitat id="1">
+        <titulo>Curso XML</titulo>
+        <descripcion></descripcion>
+        <fecha>2026-04-10</fecha>
+        <categoria>
+            <nombre>Cursos</nombre>
+            <color>#646b63</color>
+        </categoria>
+        <prioridad>media</prioridad>
+        <realizada>false</realizada>
+    </activitat>
+
+    <activitat id="2">
+        <titulo>Examen el viernes que viene</titulo>
+        <descripcion></descripcion>
+        <fecha>2026-04-22</fecha>
+        <categoria>
+            <nombre>Examen</nombre>
+            <color>#1c542d</color>
+        </categoria>
+        <prioridad>alta</prioridad>
+        <realizada>false</realizada>
+    </activitat>
+
+    <activitat id="3">
+        <titulo>Entra json schema en el examen</titulo>
+        <descripcion></descripcion>
+        <fecha>2026-05-12</fecha>
+        <categoria>
+            <nombre>Tema</nombre>
+            <color>#ededed</color>
+        </categoria>
+        <prioridad>baja</prioridad>
+        <realizada>false</realizada>
+    </activitat>
+
+    <activitat id="4">
+        <titulo>Entra json xml en el examen</titulo>
+        <descripcion></descripcion>
+        <fecha>2026-05-22</fecha>
+        <categoria>
+            <nombre>Tema</nombre>
+            <color>#f75e25</color>
+        </categoria>
+        <prioridad>baja</prioridad>
+        <realizada>false</realizada>
+    </activitat>
+    
+    <activitat id="5">
+        <titulo>prueba prueba prueba</titulo>
+        <descripcion></descripcion>
+        <fecha>2026-06-01</fecha>
+        <categoria>
+            <nombre>Tema</nombre>
+            <color>#b32821</color>
+        </categoria>
+        <prioridad>media</prioridad>
+        <realizada>true</realizada>
+    </activitat>
+</activitats>
