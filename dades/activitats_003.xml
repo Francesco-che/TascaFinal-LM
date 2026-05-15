@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<activitats>
+<!DOCTYPE activitats SYSTEM "activitats_003.dtd">
+
+<activitats xmlns:xsi="http://w3.org" xsi:noNamespaceSchemaLocation="activitats.xsd">
     <activitat id="tarea-011">
         <titulo>Curso XML</titulo>
         <descripcion>Curso de xml todos los miercoles</descripcion>
