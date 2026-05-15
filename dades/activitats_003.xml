@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <activitats>
-    <activitat id="1">
+    <activitat id="tarea-011">
         <titulo>Curso XML</titulo>
         <descripcion>Curso de xml todos los miercoles</descripcion>
         <fecha>2026-04-10</fecha>
@@ -12,7 +12,7 @@
         <realizada>false</realizada>
     </activitat>
 
-    <activitat id="2">
+    <activitat id="tarea-012">
         <titulo>Examen el viernes que viene</titulo>
         <descripcion>Hay exámen de llm el viernes ;-;</descripcion>
         <fecha>2026-04-22</fecha>
@@ -24,7 +24,7 @@
         <realizada>false</realizada>
     </activitat>
 
-    <activitat id="3">
+    <activitat id="tarea-013">
         <titulo>Entra json schema en el examen</titulo>
         <descripcion>entra json schema en el examen, toca estudiar</descripcion>
         <fecha>2026-05-12</fecha>
@@ -36,7 +36,7 @@
         <realizada>false</realizada>
     </activitat>
 
-    <activitat id="4">
+    <activitat id="tarea-014">
         <titulo>Entra json xml en el examen</titulo>
         <descripcion>tambien entra todo xml, por favor que sea tipo test</descripcion>
         <fecha>2026-05-22</fecha>
@@ -48,7 +48,7 @@
         <realizada>false</realizada>
     </activitat>
     
-    <activitat id="5">
+    <activitat id="tarea-015">
         <titulo>prueba prueba prueba</titulo>
         <descripcion>esto es una pruebaaa</descripcion>
         <fecha>2026-06-01</fecha>
