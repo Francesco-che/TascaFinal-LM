@@ -151,7 +151,14 @@ btnSubir.addEventListener("click", async () => {
             throw new Error("no se encontro el archivo");
         }
 
-        const tareasArchivo = await respuesta.json();
+        let tareasImportadas = [];
+
+        if (nombreArchivo.endsWith('.json')) {
+            const tareasArchivo = await respuesta.json();
+
+        } else if (nombreArchivo.endsWith('.xml')) {
+
+        }
         
         const listaTareas = obtenerDatos('tareas') || [];
         const listaCategorias = obtenerDatos('categorias') || [];
