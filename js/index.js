@@ -153,11 +153,16 @@ btnSubir.addEventListener("click", async () => {
 
         let tareasImportadas = [];
 
+        
         if (nombreArchivo.endsWith('.json')) {
             const tareasArchivo = await respuesta.json();
 
         } else if (nombreArchivo.endsWith('.xml')) {
+            const textoXML = await respuesta.text();
+            const parser = new DOMParser();
+            const xmlDoc = parser.parseFromString(textoXML, "text/xml");
 
+            const activitats = xmlDoc.querySelectorAll("activitat");
         }
         
         const listaTareas = obtenerDatos('tareas') || [];
