@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE activitats SYSTEM "activitats.dtd">
+
+<activitats xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="activitats.xsd">
+    
+    <activitat id="tarea-016">
+        <titulo>PauJam</titulo>
+        <descripcion>probar juegos y merendar</descripcion>
+        <fecha>2026-07-05</fecha>
+        <categoria>
+            <nombre>Trámites</nombre>
+            <color>#8e44ad</color>
+        </categoria>
+        <prioridad>alta</prioridad>
+        <realizada>false</realizada>
+    </activitat>
+
+    <activitat id="tarea-017">
+        <titulo>Aprobar programación</titulo>
+        <descripcion>hoy nos dan 2 examenes</descripcion>
+        <fecha>2026-07-12</fecha>
+        <categoria>
+            <nombre>Personal</nombre>
+            <color>#f1c40f</color>
+        </categoria>
+        <prioridad>media</prioridad>
+        <realizada>false</realizada>
+    </activitat>
+
+    <activitat id="tarea-018">
+        <titulo>Aprobar entornos</titulo>
+        <descripcion>terminamos el temario, ya no se para que seguir yendo</descripcion>
+        <fecha>2026-07-15</fecha>
+        <categoria>
+            <nombre>Vehículo</nombre>
+            <color>#7f8c8d</color>
+        </categoria>
+        <prioridad>alta</prioridad>
+        <realizada>false</realizada>
+    </activitat>
+
+    <activitat id="tarea-019">
+        <titulo>Aprobar digitalizacion</titulo>
+        <descripcion>queda 1 examen y el trabajo final</descripcion>
+        <fecha>2026-07-20</fecha>
+        <categoria>
+            <nombre>Estudios</nombre>
+            <color>#2980b9</color>
+        </categoria>
+        <prioridad>baja</prioridad>
+        <realizada>false</realizada>
+    </activitat>
+    
+    <activitat id="tarea-020">
+        <titulo>Pagar la cuota del gimnasio</titulo>
+        <descripcion>que caro que esta, a este paso me abro uno en alcudia</descripcion>
+        <fecha>2026-07-01</fecha>
+        <categoria>
+            <nombre>Finanzas</nombre>
+            <color>#27ae60</color>
+        </categoria>
+        <prioridad>media</prioridad>
+        <realizada>true</realizada>
+    </activitat>
+
+</activitats>
