@@ -163,6 +163,21 @@ btnSubir.addEventListener("click", async () => {
             const xmlDoc = parser.parseFromString(textoXML, "text/xml");
 
             const activitats = xmlDoc.querySelectorAll("activitat");
+
+            activitats.forEach(act => {
+                tareasImportadas.push({
+                    id: act.getAttribute("id"),
+                    titulo: act.querySelector("titulo").textContent,
+                    descripcion: act.querySelector("descripcion").textContent,
+                    fecha: act.querySelector("fecha").textContent,
+                    categoria: {
+                        nombre: act.querySelector("categoria nombre").textContent,
+                        color: act.querySelector("categoria color").textContent
+                    },
+                    prioridad: act.querySelector("prioridad").textContent,
+                    realizada: act.querySelector("realizada").textContent === "true"
+                });
+            });
         }
         
         const listaTareas = obtenerDatos('tareas') || [];
