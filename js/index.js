@@ -183,7 +183,7 @@ btnSubir.addEventListener("click", async () => {
         const listaTareas = obtenerDatos('tareas') || [];
         const listaCategorias = obtenerDatos('categorias') || [];
 
-        tareasArchivo.forEach(tareaImp => {
+        tareasImportadas.forEach(tareaImp => {
             if (!listaCategorias.some(c => c.nombre === tareaImp.categoria.nombre)) {
                 listaCategorias.push(tareaImp.categoria);
             }
