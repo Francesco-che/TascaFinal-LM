@@ -155,7 +155,7 @@ btnSubir.addEventListener("click", async () => {
 
         
         if (nombreArchivo.endsWith('.json')) {
-            const tareasArchivo = await respuesta.json();
+            tareasImportadas = await respuesta.json();
 
         } else if (nombreArchivo.endsWith('.xml')) {
             const textoXML = await respuesta.text();
